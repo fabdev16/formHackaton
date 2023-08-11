@@ -3,7 +3,7 @@ import { getVtexCredentials } from "../getVtexCredentials.js";
 const vtexFetch = async (endpoint, method, seller, body = null) => {
   const { accountName, environment, appKey, appToken } = await getVtexCredentials(seller);
 
-  const url = `https://${accountName}.${environment}.com.br${endpoint}`;
+  const url = `https://${accountName}.${environment}.com.br${endpoint}`; //TODO: Revisar el CORS
 
   const options = {
     headers: {
