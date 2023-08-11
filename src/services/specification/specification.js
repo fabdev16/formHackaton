@@ -1,4 +1,4 @@
-[
+const specification = 
     {
         "camioneta":{
             "specifications": [
@@ -141,4 +141,6 @@
             ]
         }
     }
-]
+
+
+export default specification;
