@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="Title">Formulario Custom</h1>
+        <h1 className="Title">Formulario para sellers</h1>
       </header>
       <Accordion className="Accordion" defaultActiveKey="0">
         <Accordion.Item eventKey="0">
@@ -24,7 +24,7 @@ function App() {
             <Specifications />
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
+        <Accordion.Item eventKey="2">
           <Accordion.Header>Inventario</Accordion.Header>
           <Accordion.Body>
             <Inventory />
