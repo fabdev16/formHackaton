@@ -150,7 +150,7 @@ function App() {
                         <div class="input-group-prepend">
                             <span class="input-group-text">{specification.description}</span>
                         </div>
-                        <input type="number" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                        <input type="number" class="form-control" placeholder={specification.placeholder} aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
                 );
             }
@@ -160,7 +160,7 @@ function App() {
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">{specification.description}</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                        <input type="text" class="form-control" placeholder={specification.placeholder} aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
                 );
             }
