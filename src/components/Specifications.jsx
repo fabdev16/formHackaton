@@ -137,7 +137,7 @@ function App() {
                     <div class="input-group rowCustom" key={i}>
                         <div class="input-group-prepend">
                             <div class="input-group-text">
-                                <span>{specification.description}</span>
+                                <span>{specification.label}</span>
                             </div>
                         </div>
                         <div className="options">
@@ -152,7 +152,7 @@ function App() {
                 newRows.push(
                     <div class="input-group rowCustom" key={i}>
                         <div class="input-group-prepend">
-                            <span class="input-group-text">{specification.description}</span>
+                            <span class="input-group-text">{specification.label}</span>
                         </div>
                         <input type="number" class="form-control" placeholder={specification.placeholder} aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
@@ -162,7 +162,7 @@ function App() {
                 newRows.push(
                     <div class="input-group rowCustom" ikey={i}>
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">{specification.description}</span>
+                            <span class="input-group-text" id="basic-addon1">{specification.label}</span>
                         </div>
                         <input type="text" class="form-control" placeholder={specification.placeholder} aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
@@ -172,7 +172,7 @@ function App() {
                 newRows.push(
                     <div class="input-group rowCustom" key={i}>
                         <div class="input-group-prepend">
-                            <span class="input-group-text">{specification.description}</span>
+                            <span class="input-group-text">{specification.label}</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
