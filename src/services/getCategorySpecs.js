@@ -1,6 +1,6 @@
-import specification from './specification/specification.js';
+import specification from './specification/specification.js'; //TODO: Cambiar a una funcion que devuelva las especificaciones de una categoria
 
-const getCredentials = (identifier) => {
-  return specification[identifier] || null;
+const getSpecification = (category) => {
+  return specification[category] || null;
 };
-export default getCredentials
+export default getSpecification
