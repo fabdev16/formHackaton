@@ -1,6 +1,6 @@
 :root {
   --bg-main: #FF3366;
-  --bg-secondary: #18172F;
+  --bg-secondary: #f2f4f5;
   --white: #fff;
   --black: #000;
 }
@@ -35,8 +35,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .Title {
-  color: var(--bg-main);
+  color: #3f3f40;
   margin: 100px 0px;
+  font-weight: 700;
+  font-family: "Fabriga,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial",sans-serif;
 }
 
 .Accordion {
