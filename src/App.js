@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Accordion from 'react-bootstrap/Accordion';
+import Button from 'react-bootstrap/Button';
 import Product from './components/Productos';
 import Specifications from './components/Specifications';
 import Inventory from './components/Inventory';
@@ -11,7 +12,7 @@ function App() {
       <header className="App-header">
         <h1 className="Title">Formulario para sellers</h1>
       </header>
-      <Accordion className="Accordion" defaultActiveKey="0">
+      <Accordion className="Accordion">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Producto</Accordion.Header>
           <Accordion.Body>
@@ -31,6 +32,7 @@ function App() {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
+      <Button className='btn'>Guardar</Button>
     </div>
   );
 }
