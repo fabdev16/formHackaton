@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Accordion from 'react-bootstrap/Accordion';
 import Product from './components/Productos';
+import Specifications from './components/Specifications';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Accordion.Item eventKey="1">
           <Accordion.Header>Especificaciones</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet
+            <Specifications />
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
