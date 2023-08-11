@@ -142,7 +142,7 @@ function App() {
                         </div>
                         <div className="options">
                             {specification.options.map((option) => (
-                                <div key={option} className="option"><input type="checkbox" aria-label="Checkbox for following text input" /><span className='optionName'>{option}</span></div>
+                                <div key={option} className="option"><input type="checkbox" required={specification.required} aria-label="Checkbox for following text input" /><span className='optionName'>{option}</span></div>
                             ))}
                         </div>
                     </div>
@@ -154,7 +154,7 @@ function App() {
                         <div class="input-group-prepend">
                             <span class="input-group-text">{specification.label}</span>
                         </div>
-                        <input type="number" class="form-control" placeholder={specification.placeholder} aria-label="Username" aria-describedby="basic-addon1" />
+                        <input type="number" class="form-control" placeholder={specification.placeholder} required={specification.required} aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
                 );
             }
@@ -164,7 +164,7 @@ function App() {
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">{specification.label}</span>
                         </div>
-                        <input type="text" class="form-control" placeholder={specification.placeholder} aria-label="Username" aria-describedby="basic-addon1" />
+                        <input type="text" class="form-control" placeholder={specification.placeholder} required={specification.required} aria-label="Username" aria-describedby="basic-addon1" />
                     </div>
                 );
             }
@@ -174,7 +174,7 @@ function App() {
                         <div class="input-group-prepend">
                             <span class="input-group-text">{specification.label}</span>
                         </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <textarea class="form-control" required={specification.required} aria-label="With textarea"></textarea>
                     </div>
                 );
             }
