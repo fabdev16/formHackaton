@@ -7,10 +7,20 @@
 
 body {
   background-color: var(--bg-secondary) !important;
-  width: 100vw;
+  width: auto !important;
   height: 100vh;
   box-sizing: border-box;
   margin: 0px !important;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg-main);
 }
 
 .App {
