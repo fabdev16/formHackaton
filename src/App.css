@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--bg-main);
+  border-radius: 5px;
 }
 
 .App {
