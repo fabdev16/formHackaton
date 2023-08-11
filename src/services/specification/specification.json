@@ -15,6 +15,19 @@
                     "helpText": "Selecciona la marca de la camioneta."
                 },
                 {
+                    "name": "description",
+                    "description": "Descripción",
+                    "label": "Descripción",
+                    "required": true,
+                    "type": "string",
+                    "rule": "",
+                    "typeInput": "textarea",
+                    "class": "input-description",
+                    "placeholder": "Ej. Descripción",
+                    "maxLength": 50,
+                    "helpText": "Ingresa el modelo de la camioneta."
+                },
+                {
                     "name": "model",
                     "description": "Modelo de la camioneta",
                     "label": "Modelo",

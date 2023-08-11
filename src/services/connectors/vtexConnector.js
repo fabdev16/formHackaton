@@ -9,6 +9,9 @@ const vtexFetch = async (endpoint, method, seller, body = null) => {
     headers: {
       "X-VTEX-API-AppKey": appKey,
       "X-VTEX-API-AppToken": appToken,
+      "Content-Type": "application/json",
+			"Accept": "application/json",
+      
     },
     method: method,
   };
