@@ -140,7 +140,11 @@ function App() {
                                 <span>{specification.description}</span>
                             </div>
                         </div>
-                        <input type="checkbox" aria-label="Checkbox for following text input" />
+                        <div className="options">
+                            {specification.options.map((option) => (
+                                <div key={option} className="option"><input type="checkbox" aria-label="Checkbox for following text input" /><span className='optionName'>{option}</span></div>
+                            ))}
+                        </div>
                     </div>
                 );
             }
