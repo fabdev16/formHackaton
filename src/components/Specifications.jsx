@@ -131,18 +131,46 @@ function App() {
             }
         ];
 
-        specifications.forEach((specification) => {
+        specifications.forEach((specification, i) => {
             if (specification.typeInput === "dropdown") {
                 newRows.push(
-                    <div key={specification.name} className="row">
-                        HOLA
+                    <div class="input-group rowCustom" key={i}>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span>{specification.description}</span>
+                            </div>
+                        </div>
+                        <input type="checkbox" aria-label="Checkbox for following text input" />
                     </div>
                 );
             }
-            else {
+            else if (specification.typeInput === "number") {
                 newRows.push(
-                    <div key={specification.name} className="row">
+                    <div class="input-group rowCustom" key={i}>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">{specification.description}</span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                );
+            }
+            else if (specification.typeInput === "text") {
+                newRows.push(
+                    <div class="input-group rowCustom" ikey={i}>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">{specification.description}</span>
+                        </div>
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                );
+            }
+            else if (specification.typeInput === "textarea") {
+                newRows.push(
+                    <div class="input-group rowCustom" key={i}>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">{specification.description}</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
                 );
             }
