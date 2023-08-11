@@ -65,7 +65,32 @@ body {
   transition: 0.3s;
 }
 
-.option:hover {
+.option:hover, .custom-select-main:hover {
   background-color: #ff33665d;
   transition: 0.3s;
+}
+
+.custom-select {
+  background-color: #ff336647;
+  padding: 6px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: calc(100% - 200px - 20px);
+  border: none;
+  outline: none;
+}
+
+.custom-select-main {
+  background-color: #ff336647;
+  padding: 6px 15px;
+  background-color: #ff336647;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: calc(50% - 10px);
+  border: none;
+  outline: none;
+}
+
+.input-group-prepend-main {
+  width: calc(50% - 10px);
 }

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+// import { getCategories } from "../services/getCategories";
 
 function App() {
     const [rows, setRows] = useState([]);
+    // const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         const newRows = [];
@@ -160,7 +162,7 @@ function App() {
             }
             else if (specification.typeInput === "text") {
                 newRows.push(
-                    <div class="input-group rowCustom" ikey={i}>
+                    <div class="input-group rowCustom" key={i}>
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">{specification.label}</span>
                         </div>
@@ -182,8 +184,29 @@ function App() {
         setRows(newRows);
     }, []);
 
+    // const handleGetCategories = async () => {
+    //     try {
+    //       const categoriesResp = await getCategories();
+    //       setCategories(categoriesResp);
+    //     } catch (error) {
+    //       alert("Lo sentimos, no pudimos obtener las categorias :(")
+    //     }
+    //   }
+    
+    //   useEffect(() => {
+    //     handleGetCategories()
+    //   }, [])
+
     return (
         <>
+            {/* <div class="input-group rowCustom">
+                <div class="input-group-prepend input-group-prepend-main">
+                    <span class="input-group-text input-group-text-main">Categoria</span>
+                </div>
+                <select class="custom-select custom-select-main">
+                {categories.map(cat => (<option key={`cat_${cat.id}`} value={cat.id}>{cat.name}</option>))}
+                </select>
+            </div> */}
             {rows}
         </>
     );
