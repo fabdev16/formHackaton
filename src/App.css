@@ -62,4 +62,10 @@ body {
   padding: 6px 15px;
   background-color: #ff336647;
   border-radius: 5px;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background-color: #ff33665d;
+  transition: 0.3s;
 }
