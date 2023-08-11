@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="Title">Formulario para sellers</h1>
+        <h1 className="Title">Formulario para Sellers</h1>
       </header>
       <Accordion className="Accordion">
         <Accordion.Item eventKey="0">
